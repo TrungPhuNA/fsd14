@@ -1,0 +1,23 @@
+/*=====================body======================*/
+.b1{border: 1px solid #ddd}
+.b2{border: 1px solid red}
+/*=====================body======================*/
+
+
+/*=====================content===================*/
+.content{background: #fafafa}
+
+/*===============left-item=============*/
+.left-item{margin-bottom: 20px;}
+.item-tag{padding: 10px;border: 1px solid #ddd}
+/*===============left-item=============*/
+
+/*=============main-content===========*/
+.info-name-time{margin-left: 50px;}
+.item-main-ct .for-text{display: block;margin-top: -40px;}
+.item-main-ct > .panel-footer{padding: 4px;background: white;border-bottom: 1px solid #ddd}
+.item
+/*=============main-content===========*/
+
+
+/*=====================content===================*/
