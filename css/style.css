@@ -16,8 +16,17 @@
 .info-name-time{margin-left: 50px;}
 .item-main-ct .for-text{display: block;margin-top: -40px;}
 .item-main-ct > .panel-footer{padding: 4px;background: white;border-bottom: 1px solid #ddd}
-.item
 /*=============main-content===========*/
+/*=============right-=================*/
+.right-title{text-align: center;margin-top: 10px;}
+.right-title h3{margin: 10px;font-size: 18px;}
+.right-box .glyphicon-heart{font-size: 40px;color: red;}
+.box-item {margin: 10px;padding: 10px;}
+.item-icon-righ .circle{border: 1px solid #27ae60;color:#27ae60; padding: 20px;}
+
+/*=============right =================*/
+
+
 
 
 /*=====================content===================*/
