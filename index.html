@@ -3,164 +3,284 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Trang chủ</title>
+	<title>Trang chủ : FSD14</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	
-
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
 </head>
 <body>
-	<div class="wrapper">
-		<!--new nav-->					
-		<nav class="navbar navbar-default">
-		   <div class="container">
-		      <!-- Brand and toggle get grouped for better mobile display -->
-		      <div class="navbar-header">
-		         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		         <span class="sr-only">Toggle navigation</span>
-		         <span class="icon-bar"></span>
-		         <span class="icon-bar"></span>
-		         <span class="icon-bar"></span>
-		         </button>
-		         <a class="navbar-brand" href="#">Brand</a>
-		      </div>
-		      <!-- Collect the nav links, forms, and other content for toggling -->
-		      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		         <ul class="nav navbar-nav">
-		            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		            <li><a href="#">Link</a></li>
-		            <li class="dropdown">
-		               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		               <ul class="dropdown-menu">
-		                  <li><a href="#">Action</a></li>
-		                  <li><a href="#">Another action</a></li>
-		                  <li><a href="#">Something else here</a></li>
-		                  <li role="separator" class="divider"></li>
-		                  <li><a href="#">Separated link</a></li>
-		                  <li role="separator" class="divider"></li>
-		                  <li><a href="#">One more separated link</a></li>
-		               </ul>
-		            </li>
-		         </ul>
-		         <form class="navbar-form navbar-left">
-		            <div class="form-group">
-		               <input type="text" class="form-control" placeholder="Search">
-		            </div>
-		            <button type="submit" class="btn btn-default">Submit</button>
-		         </form>
-		         <ul class="nav navbar-nav navbar-right">
-		            <li><a href="#">Link</a></li>
-		            <li class="dropdown">
-		               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		               <ul class="dropdown-menu">
-		                  <li><a href="#">Action</a></li>
-		                  <li><a href="#">Another action</a></li>
-		                  <li><a href="#">Something else here</a></li>
-		                  <li role="separator" class="divider"></li>
-		                  <li><a href="#">Separated link</a></li>
-		               </ul>
-		            </li>
-		         </ul>
-		      </div>
-		      <!-- /.navbar-collapse -->
-		   </div>
-		   <!-- /.container-fluid -->
-		</nav>
-		<!--end nav-->
-
-		<!--new content-->
-		<div class="content container-fluid b1">
-			<!--new left-->
-			<div class="ct-left col-md-2 b2">
-				<section class="left-item">
-					<h3>chủ đề nóng</h3>
-					<div class="item-tag">
-						<a href="#">beginner</a>
-						<a href="#" title="">php</a>
-						<a href="#" title="">sql</a>
-						<a href="#" title="">nojs</a>
-						<a href="#" title="">jquery</a>
-						<a href="#" title="">laravel</a>
-						<p>Bạn sẽ dễ dàng tìm được chủ đề đang được quan tâm nhất trên hệ thống FSD14 thông qua các tags.</p>
+	<!--wrapper-->
+	<div id="wrapper">
+		<!--header-->
+		<section id="header">
+			<!--header-main-->
+			<div id="header-main">
+				<!--header-left-->
+				<section id="header-left">
+					<a href="#">FSD14</a>
+					<div id="form-search">
+						<form>
+							<i class="fa fa-search"></i>
+							<input type="text" name="search" id="search-form" placeholder="Tìm kiếm mọi thứ" onclick="change_size()" onblur="outsize()" >
+						</form>
 					</div>
+					<div class="clear"></div>
 				</section>
-			</div>
-			<!--end left-->
+				<!--end header-left-->
 
-			<!--new main-->
-			<div class="ct-main col-md-7 b2">
-				<div class="main-item">
-					<!--new item-->
-					<div class="panel panel-default item-main-ct ">
-						<div class="panel-footer">
-							<a href="" title="" style="background:url('image/use/user1.jpeg') no-repeat center;width: 40px;height: 40px;display:block;float: left;"></a>
-							<div class="info-name-time">
-								<a href="">TrungPhuNa</a><br>
-								<i class="glyphicon glyphicon-time"></i><span>14:06 - 20/09/2016 - 10000 views</span>
+				<!--header-right-->
+				<section id="header-right">
+					<nav>
+						<ul class="sub1">
+							<li><a href="#"> <i class="fa fa-home"></i>trang chủ</a></li>
+							<li>
+								<a href="#">tin tức</a>
+								<ul class="sub2">
+									<li>
+										<a href="#">css</a>
+										<ul class="sub3">
+											<li><a href="#">Bootstrap</a></li>
+											<li><a href="#">Less</a></li>
+											<li><a href="#">Sass</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">database</a>
+										<ul class="sub3">
+											<li><a href="#">Sql</a></li>
+											<li><a href="#">Mysqli</a></li>
+											<li><a href="#">...</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">tool</a></li>
+							<li>
+								<a href="#">tutorial</a>
+								<ul class="sub2">
+									<li>
+										<a href="#">css</a>
+										<ul class="sub3">
+											<li><a href="#">Bootstrap</a></li>
+											<li><a href="#">Less</a></li>
+											<li><a href="#">Sass</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">database</a>
+										<ul class="sub3">
+											<li><a href="#">Sql</a></li>
+											<li><a href="#">Mysqli</a></li>
+											<li><a href="#">...</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">tuyển dụng</a></li>
+							<li><a href="#" class="write">viết bài</a></li>
+						</ul>
+					</nav>
+				</section>
+				<div class="clear"></div>
+				<!--end header-right-->
+			</div>
+			<!--end header-main-->
+		</section>
+		<!--end header-->
+
+		<!--content-->
+		<section id="content">
+			<!--content main-->
+			<div id="content-main">
+
+				<!--content -left-->
+				<div id="content-left">
+					<h3>chủ đề nóng</h3>
+					<div id="content-left-main">
+						<a href="#">beginner</a>
+						<a href="#">php</a>
+						<a href="#">laravel</a>
+						<a href="#">javascript</a>
+						<a href="#">css</a>
+						<a href="#">framword</a>
+						<a href="#">php-framwork</a>
+						<a href="#">font-end</a>
+						<a href="#">angularjs</a>
+					</div>
+				</div>
+				<!--end content -left-->
+
+				<!--content -submain-->
+				<div id="content-submain">
+					<!--item-post 1-->
+					<section class="item-post">
+						<!--header-->
+						<div class="item-post-header">
+							<a href="#">
+								<img src="image/use/user1.jpeg" class="img-circle" width="49" height="49">
+							</a>
+							<div class="info-name">
+								<a href="#">khicon</a>
+								<p><i class="fa fa-clock-o">14:06</i> - 29/12/2016 - 343 views</p>
 							</div>
-							<a href="" title="" class="pull-right for-text"><i class="glyphicon glyphicon-folder-open"></i> Tin tức</a>
+							<div class="link-folder">
+								<a href="">
+									<i class="fa fa-folder-o"> <span>Tin tức</span></i>
+								</a>
+							</div>
+							<div class="clear"></div>
 						</div>
-					  	<div class="panel-body">
-					    	<div class="media">
-							    <div class="media-body">
-							      	<h3 class="media-heading">
-							      		<a href="" title="">Xu hướng lập trình full-stack developer năm 2016</a>
-							      	</h3>
-							      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							    </div>
-							    <div class="media-right">
-							      	<img src="image/150x150.gif" class="media-object">
-							    </div>
-							    <div class="tags">
-							    	<i class="glyphicon glyphicon-tags"></i> <span>Tags</span>
-							    	<a href="#">beginner</a>
-									<a href="#" title="">php</a>
-									<a href="#" title="">sql</a>
-							    </div>
-						  	</div>
-					 	</div>
-					  	<div class="panel-footer item-footer">
-					  		<button type="button" class="btn btn-success"> <i class="glyphicon glyphicon-heart"></i> Recommend</button>
-					  		<span>Share bài viết : </span>
-					  	</div>
-					</div>
-					<!--end item-->
-				</div>	
-			</div>
-			<!--end main-->
-			<!--new left-->
-			<div class="ct-right col-md-3 b2">
-				<!--new right box-->
-				<div class="right-box b1">
-					<div class="right-title">
-						<i class="glyphicon glyphicon-heart"></i>
-						<h3>Bài viết nổi bật</h3>
-					</div>
-					<div class="box-item b1">
-						<div class="item-icon-righ">
-							<span class="circle">1</span> <a href="" title="">Tin tức</a>
+						<!--end header-->
+						<!--main-->
+						<div class="item-post-main">
+							<div class="text-item-post-main">
+								<h3 class="title-post">
+									<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+								</h3>
+								<p class="text-main-post">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur.
+								</p>
+								<p class="tag-main-post">
+									<i class="fa fa-tags">Tag</i><a href="#">laravel</a><a href="#">javascript</a>
+								</p>
+							</div>
+							<a href="" class="thunbar-main-post">
+								<img src="image/150x150.gif" width="150" height="150">
+							</a>
+							<div class="clear"></div>
 						</div>
-						<a href="" title="">Xu hướng lập trình full-stack developer năm...</a>
-						<div class="">
-							<i class="glyphicon glyphicon-time"></i><span>14:06 - 20/09/2016 - 10000 views</span>
+						<!--end main-->
+						<!--footer-->
+						<div class="item-post-footer">
+							<button type="button" id="btn-recommend"><i class="fa fa-heart-o"></i> Recommend</button>
+							<span class="icon-share">Share bài viết <i class="fa fa-twitter"></i> <i class="fa fa-facebook"></i> <i class="fa fa-google"></i></span>
 						</div>
-					</div>
-				</div>			
-				<!--end right box-->			
-			</div>
-			<!--end left-->
-		</div>
-		<!--end content-->
+						<!--end footer-->
+					</section>
+					<!--item-post 1-->
 
-		<!--new footer-->
-		<div class="footer container-fluid b1">
-			footer
-		</div>
+					<!--item-post 2-->
+					<section class="item-post">
+						<!--header-->
+						<div class="item-post-header">
+							<a href="#">
+								<img src="image/use/user1.jpeg" class="img-circle" width="49" height="49">
+							</a>
+							<div class="info-name">
+								<a href="#">khicon</a>
+								<p><i class="fa fa-clock-o">14:06</i> - 29/12/2016 - 343 views</p>
+							</div>
+							<div class="link-folder">
+								<a href="">
+									<i class="fa fa-folder-o"> <span>Tin tức</span></i>
+								</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!--end header-->
+						<!--main-->
+						<div class="item-post-main">
+							<div class="text-item-post-main">
+								<h3 class="title-post">
+									<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+								</h3>
+								<p class="text-main-post">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur.
+								</p>
+								<p class="tag-main-post">
+									<i class="fa fa-tags">Tag</i><a href="#">laravel</a><a href="#">javascript</a>
+								</p>
+							</div>
+							<a href="" class="thunbar-main-post">
+								<img src="image/150x150.gif" width="150" height="150">
+							</a>
+							<div class="clear"></div>
+						</div>
+						<!--end main-->
+						<!--footer-->
+						<div class="item-post-footer">
+							<button type="button" id="btn-recommend"><i class="fa fa-heart-o"></i> Recommend</button>
+							<span class="icon-share">Share bài viết <i class="fa fa-twitter"></i> <i class="fa fa-facebook"></i> <i class="fa fa-google"></i></span>
+						</div>
+						<!--end footer-->
+					</section>
+					<!--item-post 2-->
+					
+				</div>
+				<!--end content -submain-->
+
+				<!--content -right-->
+				<div id="content-right">
+					<div class="title-right-header">
+						<i class="fa fa-heart"></i>
+						<p class="hil">Bài viết nổi bật</p>
+					</div>
+					<div class="item-2like">
+						<h3><span class="icon-circle">1</span> <a href="">tin tức</a></h3>
+						<p> <a href="">xu hướng lập trình hiện nay là ...</a></p>
+						<p><i class="fa fa-clock-o">14:06</i> - 29/12/2016</p>
+						<i class="fa fa-angle-right mt-icon"></i>
+					</div>
+
+					<div class="item-2like">
+						<h3><span class="icon-circle">2</span> <a href="">tin tức</a></h3>
+						<p> <a href="">xu hướng lập trình hiện nay là ...</a></p>
+						<p><i class="fa fa-clock-o">14:06</i> - 29/12/2016</p>
+						<i class="fa fa-angle-right mt-icon"></i>
+					</div>
+
+					<div class="item-2like">
+						<h3><span class="icon-circle">3</span> <a href="">tin tức</a></h3>
+						<p> <a href="">xu hướng lập trình hiện nay là ...</a></p>
+						<p><i class="fa fa-clock-o">14:06</i> - 29/12/2016</p>
+						<i class="fa fa-angle-right mt-icon"></i>
+					</div>
+
+					<div class="item-2like">
+						<h3><span class="icon-circle">4</span> <a href="">tin tức</a></h3>
+						<p> <a href="">xu hướng lập trình hiện nay là ...</a></p>
+						<p><i class="fa fa-clock-o">14:06</i> - 29/12/2016</p>
+						<i class="fa fa-angle-right mt-icon"></i>
+					</div>
+
+				</div>
+				<!--end content -right-->
+
+				<div class="clear"></div>
+			</div>
+			<!--end content main-->
+		</section>
+		<!--end content-->
+		
+		<!-- footer-->
+		<section id="footer">
+			<h3>Viet Nam Full-stack developer © 2017</h3>
+			<p>Đăng ký nhận bản tin miễn phí </p>
+			<form>
+				<input type="text" name="" id="input-sub" placeholder="codingeveryday@gmail.com">
+				<button type="button">Subscribe</button>
+			</form>
+			<a href=""><i class="fa fa-twitter"></i></a>
+			<a href=""><i class="fa fa-facebook"></i></a>
+			<a href=""><i class="fa fa-google"></i></a>
+			<a href=""><i class="fa fa-rss"></i></a>
+		</section>
 		<!--end footer-->
-			
-			
+
+
 	</div>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!--end wrapper-->
+	
 </body>
+	<script type="text/javascript" src="js/menu.js"></script>
 </html>
